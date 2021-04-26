@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #242223;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Lato' sans-serif;
+}
+
+.movie-container{
+    margin: 20px 0;
+}
+
+.movie-container select{
+    background-color: #fff;
+    font-size: 14px;
+    padding: 5px 15px 5px 15px;
+    margin-left: 10px;
+    border: 0;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+
+    appearance: none;
+
+}
+
+
+.seat{
+    background-color: #444451;
+    width: 15px;
+    height: 12px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+
+}
+.seat.selected{
+    background-color: #6feaf6;
+}
+.seat.occupied{
+    background-color: #fff;
+}
+
+.seat:nth-of-type(2){
+    margin-right: 20px;
+}
+.seat:nth-last-of-type(2){
+    margin-left: 20px;
+}
+
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.showcase .seat:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1);
+}
+
+.row{
+    display: flex;
+}
+
+.screen{
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    margin :20px 0
+}
+
+
+.count ,.total{
+    color: #6feaf6;
+}
